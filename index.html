@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>V-Chat</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+</head>
+<body>
+
+    <!--- Profile Section --->
+    <header>
+        <ul>
+            <li>Home</li>
+            <li>Settings</li>
+            <li>Profile</li>
+            <li><img id="mode" src="/assets/darkmode.png" alt="" onclick="changemode(this)"></li>
+        </ul>
+
+        <div class="profileImg">
+            <img class="profile" id="profileimg" src="/assets/profile.jpg" alt="profile">
+            <p class="userName" id="username">Welcome Venkatesh Gowtham !</p>
+        </div>
+        
+
+    </header>
+
+    <!--- Chat Section --->
+
+    <div class="chatSec">
+        <div class="leftCont">
+            <p>Recent Search</p>
+            <hr>
+        </div>
+        <div class="rightCont">
+            <div class="responseCont" id="responseCont">
+                <!-- <div><img src="/assets/profile.jpg" alt="profile" id="replyProfile"></div>
+                <div id="reply">
+                    <p id="replyTxt">Welcome to ChatGPT</p>
+                </div> -->
+            </div>
+            <div class="searchCont">
+                <div>
+                    <div class="msgIcon" ><img class="msgIcon"src="/assets/messageLight.png" alt="msgicon"></div>
+                    <div class="searchtxt">
+                        <input type="text" name="text" id="search" placeholder="Search here to get results" maxlength="150">
+                    </div>
+                </div>
+                <img class="sendIcon" src="/assets/search.png" alt="search" onclick="txtSearch()">
+                
+                
+            </div>
+        </div>
+    </div>
+
+
+    <script src="chat.js"></script>
+</body>
+
+
+</html>
